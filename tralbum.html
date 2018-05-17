@@ -8,7 +8,7 @@
     </head>
     <body>
         <header id="header" class="header header--fixed hide-from-print" role="banner">
-            <div class="container">
+            <div class="container tralbum-container">
                 <ul class="left">
                     <li><a href="#"><img src="images/logo.svg" alt="logo" width="108"></a></li>
                     <li><input type="text" name="" value="" placeholder="Search and discover music"></li>
@@ -22,24 +22,7 @@
             </div>
         </header>
         <div class="page">
-            <div class="hero">
-                <div class="inner-hero"></div>
-            </div>
-            <div class="inner-page"></div>
+            <div class="tralbum"></div>
         </div>
-        <script type="text/javascript">
-        (function() {
-            var header = new Headroom(document.querySelector("#header"), {
-                tolerance: 5,
-                offset : 205,
-                classes: {
-                    initial: "animated",
-                    pinned: "slideDown",
-                    unpinned: "slideUp"
-                }
-            });
-            header.init();
-        }());
-        </script>
     </body>
 </html>
