@@ -15,7 +15,7 @@ header {
     top: 0;
     background-color: #FFF;
     box-shadow: 0px 1px #EEE;
-
+    transition: all .2s ease-in;
 }
 
 header .container {
@@ -87,10 +87,25 @@ header .left input:focus {
     max-width: 97%;
     margin: 0 auto;
     background-color: #FFF;
-    height: 1000px;
+    height: 4000px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d6d6d6+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #5e4da1 0%, #5D9FBA 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #5e4da1 0%,#5D9FBA 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #5e4da1 0%,#5D9FBA 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
 }
 
-@media(min-width:1025px) {
+@media(min-width:1130px) {
+    .inner-page {
+        max-width: 1106px;
+    }
+}
+
+
+
+/* Current Breakpoints */
+/* @media(min-width:1025px) {
     .inner-page {
         max-width: 994px;
     }
@@ -100,13 +115,29 @@ header .left input:focus {
     .inner-page {
         max-width: 1106px;
     }
-}
+} */
 
 /* Tralbum Styles */
 
 .tralbum {
     max-width: 975px;
-    height: 1000px;
+    height: 3000px;
     background-color: #FFF;
     margin: 0 auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d6d6d6+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #FFF 0%, #5D9FBA 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #FFF 0%,#5D9FBA 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #FFF 0%,#5D9FBA 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+}
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.slideUp {
+    transform: translateY(-100%);
 }

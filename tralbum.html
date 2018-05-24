@@ -24,5 +24,20 @@
         <div class="page">
             <div class="tralbum"></div>
         </div>
+        <script type="text/javascript">
+        console.log('sup');
+        (function() {
+            var header = new Headroom(document.querySelector("#header"), {
+                tolerance: 5,
+                offset : 50,
+                classes: {
+                    initial: "animated",
+                    pinned: "slideDown",
+                    unpinned: "slideUp"
+                }
+            });
+            header.init();
+        }());
+        </script>
     </body>
 </html>
