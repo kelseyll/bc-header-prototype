@@ -14,6 +14,7 @@
                     <li><input type="text" name="" value="" placeholder="Search and discover music"></li>
                 </ul>
                 <ul class="right">
+                    <li onclick="cartwiggle()"><a href="#"><img src="images/cart.svg" alt="feed" height="23"></a></li>
                     <li><a href="#"><img src="images/feed.svg" alt="feed" height="23"></a></li>
                     <li><a href="#"><img src="images/collection.svg" alt="collection" height="23"></a></li>
                     <!-- <li><a href="#"><img src="images/messages.svg" alt="messages" height="23"></a></li> -->
@@ -23,6 +24,9 @@
         </header>
         <div class="page">
             <div class="tralbum">
+                <div id="cart" class="cart">
+                    <div class="checkout-button">Check out</div>
+                </div>
             </div>
         </div>
         <script type="text/javascript">
@@ -39,6 +43,10 @@
             });
             header.init();
         }());
+        function cartwiggle() {
+            var element = document.getElementById("cart");
+            element.classList.add("wiggle");
+        }
         </script>
     </body>
 </html>

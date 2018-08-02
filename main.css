@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     font-family: "Helvetica Neue";
     -webkit-font-smoothing: antialiased;
-    background-color: #eef2f3;
+    background-color: #FFF;
 }
 
 header {
@@ -102,8 +102,6 @@ header .left input:focus {
     }
 }
 
-
-
 /* Current Breakpoints */
 /* @media(min-width:1025px) {
     .inner-page {
@@ -120,17 +118,61 @@ header .left input:focus {
 /* Tralbum Styles */
 
 .tralbum {
+    /* position cart to right */
+    display: flex;
+    justify-content: flex-end;
     max-width: 975px;
     height: 3000px;
-    background-color: #FFF;
     margin: 0 auto;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d6d6d6+100 */
     background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top, #FFF 0%, #5D9FBA 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #FFF 0%,#5D9FBA 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #FFF 0%,#5D9FBA 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, #888 30%, #e45e45 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #888 30%,#e45e45 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #888 30%,#e45e45 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
 }
+
+.cart {
+    box-sizing: border-box;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 140px 30px 0 0;
+    height: 150px;
+    background-color: #e6e6e6;
+    width: 108px;
+    border-radius: 4px;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 6px;
+}
+
+.right li:hover a img {
+    opacity: 0.5;
+}
+
+.wiggle {
+    /* wiggle */
+    -webkit-animation-name: wiggle-frames; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .7s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes wiggle-frames {
+    40%  {transform: rotate(-8deg);}
+    75%  {transform: rotate( 4deg);}
+    100% {transform: rotate( 0deg);}
+}
+
+.checkout-button {
+    border-radius: 3px;
+    background-color: green;
+    padding: 8px;
+    text-align: center;
+}
+
 .headroom {
     will-change: transform;
     transition: transform 200ms linear;
