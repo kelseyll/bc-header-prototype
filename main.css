@@ -39,8 +39,9 @@ header .left li {
     padding-right: 19px;
 }
 
-header .right li {
-    padding-left: 30px;
+header .right li a {
+    padding: 15px;
+    display: block;
 }
 
 header ul {
