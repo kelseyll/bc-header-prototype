@@ -157,7 +157,7 @@ header .left input:focus {
 .wiggle {
     /* wiggle */
     -webkit-animation-name: wiggle-frames; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: .7s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .6s; /* Safari 4.0 - 8.0 */
     -webkit-animation-timing-function: ease-in-out;
 }
 
