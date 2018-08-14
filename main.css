@@ -18,6 +18,12 @@ header {
     transition: all .2s ease-in;
 }
 
+header.dark {
+    background-color: #333;
+    box-shadow: 0px 1px #EEE;
+    color: #FFF;
+}
+
 header .container {
     max-width: 1360px;
     margin: 0 auto;
@@ -65,10 +71,21 @@ header .left input {
     color: #333;
 }
 
+header .left input.dark {
+    background-color: rgba(255,255,255,0.1);
+}
+
+header .left input.dark::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
 header .left input:focus {
     outline: none;
 }
 
+header.dark {
+    box-shadow: 0 1px rgba(255,255,255,0.3) !important;
+}
 /* Homepage Styles */
 
 .hero {
@@ -131,6 +148,10 @@ header .left input:focus {
     background: -webkit-linear-gradient(top, #333 30%,#666 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #333 30%,#666 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+}
+
+.tralbum-dark img {
+    width: 100%;
 }
 
 .cart {
