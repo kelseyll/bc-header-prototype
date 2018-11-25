@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>searchicon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="searchicon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17.7142857,17.8 L24,25 L17.7142857,17.8 Z M11.4285714,20.2 C6.22131522,20.2 2,15.9019336 2,10.6 C2,5.2980664 6.22131522,1 11.4285714,1 C16.6358276,1 20.8571429,5.2980664 20.8571429,10.6 C20.8571429,15.9019336 16.6358276,20.2 11.4285714,20.2 Z" id="search-icon" stroke="#000000"></path>
+    </g>
+</svg>
