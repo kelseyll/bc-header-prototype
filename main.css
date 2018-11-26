@@ -42,19 +42,21 @@ header .tralbum-container {
     max-width: 1228px;
 }
 
-header .left, header .right {
-    display: flex;
-}
-
 header .left li {
     padding-right: 19px;
 }
 
 header .right li a {
-    padding: 15px;
+    padding: 0 15px;
     display: block;
 }
-
+header .right li {
+    position: relative;
+}
+header .right li:hover {
+    background-color: #F3F3F3;
+    cursor: pointer;
+}
 header .logo {
     display: block;
     padding: 10px 0;
@@ -69,6 +71,9 @@ header ul {
 
 header li {
     list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 header svg {
