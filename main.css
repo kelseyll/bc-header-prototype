@@ -54,9 +54,18 @@ header .right li {
     position: relative;
 }
 header .right li:hover {
-    background-color: #F3F3F3;
     cursor: pointer;
 }
+
+header .right li:hover:after {
+    content: "";
+    position:absolute;
+    bottom:0;
+    height: 1px;
+    background:black;
+    bottom:-1px;left:0;width:100%;
+}
+
 header .logo {
     display: block;
     padding: 10px 0;
@@ -167,7 +176,7 @@ header .profile {
     height: 3000px;
     margin: 54px auto 0;
     background-color: #FFF;
-    border: solid 1px rgba(0,0,0,0.1);
+    /* border: solid 1px rgba(0,0,0,0.1); */
 }
 
 .tralbum-cart {
@@ -206,8 +215,8 @@ header .profile {
     padding: 6px;
 }
 
-.right a:hover svg path {
-    stroke: #000;
+.right li:hover svg path {
+    /* fill: #1DA0C3; */
 }
 
 .header-image {
