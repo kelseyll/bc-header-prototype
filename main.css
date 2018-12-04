@@ -58,6 +58,10 @@ header .right li:hover {
     background: #F3F3F3;
 }
 
+/* header .right li:hover path {
+    fill: #1DA0C3;
+} */
+
 header .right > li:hover:after {
     /* content: "";
     position:absolute;
@@ -80,17 +84,18 @@ header ul {
 }
 
 .user-menu {
+    display: none;
     flex-direction: column;
     position: absolute;
-    display: flex;
-    top: 56px;
-    transform: translateX(4px);
+    top: 48px;
+    transform: translateX(7px);
     width: 220px;
     background-color: #FFF;
     border: 1px #EEE solid;
     border-radius: 3px;
     padding: 10px 0;
     font-size: 15px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
 }
 
 .user-menu ul {
@@ -331,4 +336,12 @@ header .profile {
 /* User Menu */
 .link-active {
     background-color: #F3F3F3;
+}
+
+.profile-link-active {
+    box-shadow: 0 0 0 2px #1DA0C3;
+}
+
+.user-menu-show {
+    display: flex;
 }
