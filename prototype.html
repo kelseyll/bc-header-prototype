@@ -41,16 +41,56 @@
                     <li id="profile">
                         <a href="#"><img id="profile-target" class="profile" src="images/thumbnail.png" alt="profile" width="31"></a>
                     </li>
-                    <ul class="user-menu">
+                    <div class="user-menus">
+                        <!-- User menu -->
+                        <!-- <ul class="user-menu">
                         <li><b>Miss Tati</b></li>
                         <li>purchases</li>
                         <li class="divider"></li>
                         <ul>
-                            <li>settings</li>
-                            <li>help</li>
-                            <li>log out</li>
-                        </ul>
+                        <li>settings</li>
+                        <li>help</li>
+                        <li>log out</li>
                     </ul>
+                    </ul> -->
+                    <!-- Label user menu -->
+                        <ul class="label-user-menu">
+                            <li><b>Miss Tati</b></li>
+                            <li>purchases</li>
+                            <ul class="artists">
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                                <li>artist</li>
+                            </ul>
+                            <li class="label-divider"></li>
+                            <ul>
+                                <li>settings</li>
+                                <li>help</li>
+                                <li>log out</li>
+                            </ul>
+                        </ul>
+                    </div>
                 </ul>
             </div>
         </header>
@@ -65,30 +105,30 @@
         </div>
         <script type="text/javascript">
         console.log('sup');
-        (function() {
-            var header = new Headroom(document.querySelector("#header"), {
-                tolerance: 5,
-                offset : 0,
-                classes: {
-                    initial: "animated",
-                    pinned: "slideDown",
-                    unpinned: "slideUp"
-                }
-            });
-            header.init();
-        }());
+        // (function() {
+        //     var header = new Headroom(document.querySelector("#header"), {
+        //         tolerance: 5,
+        //         offset : 0,
+        //         classes: {
+        //             initial: "animated",
+        //             pinned: "slideDown",
+        //             unpinned: "slideUp"
+        //         }
+        //     });
+        //     header.init();
+        // }());
         $(document).ready(function(){
             // toggle menu on click
             $("#profile").click(function(){
                 $("#profile-target").toggleClass("profile-link-active");
                 $("#profile").toggleClass("link-active");
-                $(".user-menu").toggleClass("user-menu-show");
+                $(".label-user-menu").toggleClass("user-menu-show");
             });
             // click out to close menu
             $('body').click(function() {
                 $("#profile-target").removeClass("profile-link-active");
                 $("#profile").removeClass("link-active");
-                $(".user-menu").removeClass("user-menu-show");
+                $(".label-user-menu").removeClass("user-menu-show");
             });
             $('#profile').click(function(event){
                 event.stopPropagation();

@@ -46,6 +46,10 @@ header .left li {
     padding-right: 19px;
 }
 
+header .right {
+    position: relative;
+}
+
 header .right li a {
     padding: 0 15px;
     display: block;
@@ -95,7 +99,7 @@ header ul {
     border-radius: 3px;
     padding: 10px 0;
     font-size: 15px;
-    box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
 }
 
 .user-menu ul {
@@ -136,7 +140,8 @@ header .right .user-menu li.divider:hover {
     background-color: red;
 }
 
-header li {
+header .right > li,
+header .left > li {
     list-style: none;
     height: 100%;
     display: flex;
@@ -218,19 +223,6 @@ header .profile {
     }
 }
 
-/* Current Breakpoints */
-/* @media(min-width:1025px) {
-    .inner-page {
-        max-width: 994px;
-    }
-}
-
-@media(min-width:1281px) {
-    .inner-page {
-        max-width: 1106px;
-    }
-} */
-
 /* Tralbum Styles */
 
 .tralbum {
@@ -239,7 +231,6 @@ header .profile {
     height: 3000px;
     margin: 54px auto 0;
     background-color: #FFF;
-    /* border: solid 1px rgba(0,0,0,0.1); */
 }
 
 .tralbum-cart {
@@ -249,7 +240,6 @@ header .profile {
     max-width: 975px;
     height: 3000px;
     margin: 0 auto;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d6d6d6+100 */
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(top, #333 30%, #666 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #333 30%,#666 100%); /* Chrome10-25,Safari5.1-6 */
@@ -339,7 +329,40 @@ header .profile {
 }
 
 .profile-link-active {
-    box-shadow: 0 0 0 2px #1DA0C3;
+    background-color: red;
+}
+
+/* Label User Menu */
+.label-user-menu {
+    display: none;
+    width: 305px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 53px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFF;
+    border: 1px #EEE solid;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+header .label-user-menu li {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+header .label-user-menu ul {
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+}
+
+header .artists {
+    max-height: 200px;
 }
 
 .user-menu-show {
